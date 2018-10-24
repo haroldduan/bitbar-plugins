@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # <bitbar.title>Life Percentage</bitbar.title>
 # <bitbar.version>v1.0</bitbar.version>
@@ -16,5 +16,5 @@ dob = datetime(1987, 9, 20, 19, 43, 0)  # Date of birth
 dod = datetime(2067, 9, 20, 19, 43, 0)  # Date of death
 now = datetime.now()
 
-percent = ((dod - now).total_seconds() / (dod - dob).total_seconds() * 100)
+percent = (dod - now).total_seconds() / (dod - dob).total_seconds() * 100
 print "❤ %.2f" % percent
